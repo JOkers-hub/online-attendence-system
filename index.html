@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Online Attendence System</title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <ul class="nav">
+            <li onclick="showAdmin()">Admin</li>
+            <li onclick="showTeacher()">Teacher</li>
+            <li onclick="showStudent()">Student</li>
+            <li onclick="showContactUs()">Contact us</li>
+        </ul>
+        <div class="wrapper">
+            <div class="rec-prism">
+
+                <div class="face face-front">
+                    <div class="content">
+                        <h2>Log in</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>email</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" name="password" placeholder="password" autocomplete="new-password">
+                                <label>password</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                            <span class="psw" onclick="showForgotPassword()">Forgot Password?   </span>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-back">
+                    <div class="content">
+                        <h2>Log in</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>email</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" name="password" placeholder="password" autocomplete="new-password">
+                                <label>password</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                            <span class="psw" onclick="showForgotPassword()">Forgot Password?   </span>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-right">
+                    <div class="content">
+                        <h2>Log in</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>email</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" name="password" placeholder="password" autocomplete="new-password">
+                                <label>password</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                            <span class="psw" onclick="showForgotPassword()">Forgot Password?   </span>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-left">
+                    <div class="content">
+                        <h2>Contact us</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="name" placeholder="name">
+                                <label>Name</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>e-mail</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <textarea placeholder="your message"></textarea>
+                                <label>your message</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-bottom">
+                    <div class="content">
+                        <div class="thank-you-msg">
+                            Thank you!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- partial -->
+        <script  src="js/script.js"></script>
+
+    </body>
+</html>
