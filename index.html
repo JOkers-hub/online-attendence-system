@@ -1,114 +1,120 @@
 <!DOCTYPE html>
-<html lang="en" >
-    <head>
-        <meta charset="UTF-8">
-        <title>Online Attendence System</title>
-        <link rel="stylesheet" href="css/style.css">
-
-    </head>
-    <body>
-        <!-- partial:index.partial.html -->
-        <ul class="nav">
-            <li onclick="showAdmin()">Admin</li>
-            <li onclick="showTeacher()">Teacher</li>
-            <li onclick="showStudent()">Student</li>
-            <li onclick="showContactUs()">Contact us</li>
-        </ul>
-        <div class="wrapper">
-            <div class="rec-prism">
-
-                <div class="face face-front">
-                    <div class="content">
-                        <h2>Log in</h2>
-                        <form onsubmit="event.preventDefault()">
-                            <div class="field-wrapper">
-                                <input type="text" name="email" placeholder="email">
-                                <label>email</label>
-                            </div>
-                            <div class="field-wrapper">
-                                <input type="password" name="password" placeholder="password" autocomplete="new-password">
-                                <label>password</label>
-                            </div>
-                            <div class="field-wrapper">
-                                <input type="submit" onclick="showThankYou()">
-                            </div>
-                            <span class="psw" onclick="showForgotPassword()">Forgot Password?   </span>
-
-                        </form>
-                    </div>
-                </div>
-                <div class="face face-back">
-                    <div class="content">
-                        <h2>Log in</h2>
-                        <form onsubmit="event.preventDefault()">
-                            <div class="field-wrapper">
-                                <input type="text" name="email" placeholder="email">
-                                <label>email</label>
-                            </div>
-                            <div class="field-wrapper">
-                                <input type="password" name="password" placeholder="password" autocomplete="new-password">
-                                <label>password</label>
-                            </div>
-                            <div class="field-wrapper">
-                                <input type="submit" onclick="showThankYou()">
-                            </div>
-                            <span class="psw" onclick="showForgotPassword()">Forgot Password?   </span>
-
-                        </form>
-                    </div>
-                </div>
-                <div class="face face-right">
-                    <div class="content">
-                        <h2>Log in</h2>
-                        <form onsubmit="event.preventDefault()">
-                            <div class="field-wrapper">
-                                <input type="text" name="email" placeholder="email">
-                                <label>email</label>
-                            </div>
-                            <div class="field-wrapper">
-                                <input type="password" name="password" placeholder="password" autocomplete="new-password">
-                                <label>password</label>
-                            </div>
-                            <div class="field-wrapper">
-                                <input type="submit" onclick="showThankYou()">
-                            </div>
-                            <span class="psw" onclick="showForgotPassword()">Forgot Password?   </span>
-                        </form>
-                    </div>
-                </div>
-                <div class="face face-left">
-                    <div class="content">
-                        <h2>Contact us</h2>
-                        <form onsubmit="event.preventDefault()">
-                            <div class="field-wrapper">
-                                <input type="text" name="name" placeholder="name">
-                                <label>Name</label>
-                            </div>
-                            <div class="field-wrapper">
-                                <input type="text" name="email" placeholder="email">
-                                <label>e-mail</label>
-                            </div>
-                            <div class="field-wrapper">
-                                <textarea placeholder="your message"></textarea>
-                                <label>your message</label>
-                            </div>
-                            <div class="field-wrapper">
-                                <input type="submit" onclick="showThankYou()">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="face face-bottom">
-                    <div class="content">
-                        <div class="thank-you-msg">
-                            Thank you!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- partial -->
-        <script  src="js/script.js"></script>
-
-    </body>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Patrick Hand" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/index1.css"/>
+</head>
+<body>
+<div id="main">
+<form action="" name="myform" onsubmit="return myfun()">
+   <h1>Student portal</h1>
+   <div class="inputbox">
+   <input type="email" name="email"value="" placeholder="email" required/>
+   <span id="message"></span>
+   </div>
+   <div class="inputbox">
+   <input type="password" name="password" value=""placeholder="password" required/>
+   <span id="message"></span>
+   </div>
+   <div class="sub">
+   <input type="submit" value="submit"></input>
+   </div>
+   <h2><a href="#">forget password?</a></h2>
+   <i class="fa fa-arrow-circle-down" id="arrow" onclick="fun()"></i><br/>
+     <button id="admin" onclick="fun1()">Admin</button>
+     <button id="student">Student</button>
+     <button id="teacher">Teacher</button> 
+   </form>
+</div>
+<div id="main2" style="display:none">
+<form action="">
+   <h1>admin portal</h1>
+   <div class="inputbox">
+   <input type="email" placeholder="email" required/>
+   </div>
+   <div class="inputbox">
+   <input type="password" placeholder="password" required/>
+   </div>
+   <div class="sub">
+   <input type="submit" value="submit"></input>
+   </div>
+   <h2><a href="#">forget password?</a></h2>
+   <i class="fa fa-arrow-circle-down" id="arrow" onclick="fun()"></i><br/>
+     <button id="admin" onclick="fun1()">Admin</button>
+     <button id="student">Student</button>
+     <button id="teacher">Teacher</button> 
+   </form>
+</div>
+<div id="main1" style="display:none">
+<form action="">
+   <h1>admin portal</h1>
+   <div class="inputbox">
+   <input type="email" placeholder="email" required/>
+   </div>
+   <div class="inputbox">
+   <input type="password" placeholder="password" required/>
+   </div>
+   <div class="sub">
+   <input type="submit" value="submit"></input>
+   </div>
+   <h2><a href="#">forget password?</a></h2>
+   <i class="fa fa-arrow-circle-down" id="arrow" onclick="fun()"></i><br/>
+     <button id="admin" onclick="fun1()">Admin</button>
+     <button id="student" onclick="fun2()">Student</button>
+     <button id="teacher" onclick="fun3()">Teacher</button> 
+   </form>
+</div>
+<script>
+function myfun(){
+	var email=document.myform.email.value;
+	var password=document.myform.password.value;
+	if(email.indexOf('@')<=0){
+		document.getElementById("message").innerHTML="**invalid email**";
+		return false;
+	}
+	if(email.charAt(a.length-4)!='.'){
+		document.getElementById("message").innerHTML="**invalid email**";
+		return false;
+	}
+	if(password.length<5){
+		document.getElementById("message").innerHTML="**invalid password**";
+		return false;
+	}
+	if(password.length>20){
+		document.getElementById("message").innerHTML="**invalid password**";
+		return false;
+	}
+	if(password==" "){
+		document.getElementById("message").innerHTML="**invalid password**";
+		return false;
+	}
+	
+}
+function fun(){
+	document.getElementById("admin").style.display="inline-block";
+	document.getElementById("student").style.display="inline-block";
+	document.getElementById("teacher").style.display="inline-block";
+    }
+function fun1(){
+	document.getElementById("main1").style.display="block";
+	document.getElementById("main").style.display="none";
+	document.getElementById("main2").style.display="none";
+	}
+function fun2(){
+	document.getElementById("main").style.display="block";
+	document.getElementById("main1").style.display="none";
+	document.getElementById("main2").style.display="none";
+}
+function fun3(){
+	document.getElementById("main2").style.display="block";
+	document.getElementById("main").style.display="none";
+	document.getElementById("main1").style.display="none";
+}
+</script>
+</body>
 </html>
