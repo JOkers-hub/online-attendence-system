@@ -1,0 +1,424 @@
+@charset "ISO-8859-1";
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+/*-----------------header css---------------------------*/
+header{
+width:100%;
+height:60px;
+background:#217183;
+margin:0px;
+padding:0px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+header h2{
+text-transform:capitalize;
+font-size:20px;
+color:white;
+font-family:'Open Sans',sans-serif;
+}
+header img{
+  height:40px;
+  margin-left:10px;
+}
+ header .name{
+  margin-left: auto;
+  margin-right: 10px;
+color:white;
+font-size:20px;
+font-family:'Open Sans',sans-serif;
+}
+/*---------------------------header css end-----------------*/
+.main{
+width:100%;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+/*---------------------leftside menu css----------------*/
+.leftsidemenu{
+width:20%;
+height:calc(100vh - 60px);
+overflow:hidden;
+background:#0E4856;
+border:1px solid black;
+}
+.leftsidemenu ul{
+list-style:none;
+
+}
+.leftsidemenu ul li{
+padding:18px;
+border-bottom:1px solid white;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.leftsidemenu ul li:hover{
+background-color: #0F5668;
+}
+.leftsidemenu ul li a{
+text-decoration:none;
+color:white;
+font-size:25px;
+text-transform:capitalize;
+transition-duration:1s;
+}
+.leftsidemenu ul li:hover span{
+	color:black;
+	font-size:26px;
+}
+.leftsidemenu ul li:hover i{
+	color:black;
+}
+.fas{
+	line-height:auto;
+    font-size:23px;
+	margin-right:15px;
+}
+.material-icons{
+	line-height:auto;
+    font-size:25px;
+	margin-right:15px;
+}
+.fa{
+	line-height:auto;
+    font-size:23px;
+	margin-right:15px;
+	
+}
+.leftsidemenu img{
+  width:12%;
+  height:30px;
+  margin-right:20px;
+}
+.leftsidemenu .logout{
+ color:white;
+ font-size:25px;
+ margin-right:50px;
+}
+/*------------------left sidemenu css end----------------*/
+
+
+
+/*------------------rightside menu css start---------------*/
+.rightsidemenu{
+width:80%;
+display:flex;
+justify-content:center;
+align-items:center;
+background-image: url("admindashboard29.png");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+/*-----------------admin profile css start----------------*/
+ .rightsideprofile{
+border:2px solid black;
+width:80%;
+padding-bottom:10px;
+border-radius:40px 0px 40px 0px;
+position:relative;
+ box-shadow:1px 1px 3px 3px #1A7D97;
+}
+.rightsideprofile:hover{
+  border:4px solid #337D92;
+    box-shadow:1px 1px 3px 3px black;
+}
+.rightsideprofile img{
+  width:30%;
+  height:160px;
+  border-radius:50%;
+  position:relative;
+}
+.rightsideprofile span{
+  font-size:35px;
+  position:absolute;
+  top:15%;
+  left:35%;
+  width:60%;
+}
+.rightsideprofile table{
+width:100%;
+border-spacing: 20px 5px;
+}
+
+.rightsideprofile table,th,td{
+  
+  border-collapse: separate;
+  }
+
+  .rightsideprofile th{
+    text-align:left;
+    padding-left: 10px;
+    font-size:20px;
+    font-family:'Maven Pro',sans-serif;
+    font-weight: lighter;
+  }
+  .rightsideprofile td{
+    padding:5px;
+    width:50%;
+    border-radius:5px;
+    background:#209DBC;
+    font-size:20px;
+     border:1px solid black;
+  }
+  .leftsidemenu .fa{
+    font-size:25px;
+  }
+
+
+
+
+
+
+/*------------------admin profile css end----------------*/
+/*------------------find teacher student form css start----------------*/
+.rightsidemenufineteacher{
+border:2px solid black;
+padding:15px;
+ box-shadow:1px 1px 3px 3px #1A7D97;
+border-radius:20px 0px 20px 0px;
+}
+.rightsidemenufineteacher:hover{
+border:4px solid #337D92;
+    box-shadow:1px 1px 3px 3px black;
+
+}
+.rightsidemenufineteacher:hover h1{
+	 color:#0E4856;
+      text-shadow:2px 2px 3px grey;	
+      width:65%;
+      margin:auto;
+      border-bottom:2px solid black;
+      box-shadow:2px 2px 3px grey;
+      margin-bottom:10px;
+}
+.rightsidemenufineteacher h1{
+font-size:30px;
+text-align:center;
+font-family:'Open Sans',sans-serif;
+margin-bottom:10px;
+}
+.rightsidemenufineteacher p{
+font-size:20px;
+font-family:'Open Sans',sans-serif;
+margin-left:10px;
+margin-right:10px;
+}
+.rightsidemenufineteacher span{
+font-size:18px;
+font-family:'Maven Pro',sans-serif;
+}
+.rightsidemenufineteacher input{
+font-size:20px;
+margin:15px 0px 15px 15px;
+border:2px solid black;
+border-radius:10px;
+padding:5px;
+}
+
+.rightsidemenufineteacher input::placeholder{
+color:grey;
+font-family:'Open Sans',sans-serif;
+}
+/*------------------find teacher student form css start----------------*/
+/*----------------- teacher student form css start-----------*/
+ .rightsidemenuform{
+    border:2px solid black;
+    width:45%;
+    border-radius:30px 0px 30px 0px;
+    box-shadow:1px 1px 3px 3px #1A7D97;
+  }
+  .rightsidemenuform:hover{
+   border:4px solid #337D92;
+    box-shadow:1px 1px 3px 3px black;
+}
+  .rightsidemenuform th{
+    padding:5px;
+    font-size:18px;
+    font-family:'Open Sans',sans-serif;
+    text-align:left;
+  }
+  .rightsidemenuform table caption{
+    font-family:'Open Sans',sans-serif;
+  width:70%;
+ margin:auto;
+ margin-top:5px;
+
+  } 
+  .rightsidemenuform:hover caption{
+     color:#0E4856;
+      text-shadow:2px 2px 3px grey;
+      border-bottom:2px solid black;
+     box-shadow:2px 2px 3px grey;
+  }
+ .rightsidemenuform .main{
+  padding:5px;
+  font-size:17px;
+  width:90%;
+  border-radius:10px;
+  border:2px solid black;
+ } 
+ .rightsidemenuform .rad{
+  padding:5px;
+  font-size:20px;
+ }
+ .rightsidemenuform .sub{
+  padding:5px;
+  font-size:20px;
+  background:#217183;
+  display:block;
+  margin:auto;
+  text-align:center;
+  border-radius:10px;
+  border:2px solid black;
+  margin-bottom:5px;
+ }
+ .rightsidemenuform .sub:hover{
+  background:#0F5668;
+} 
+ .rightsidemenuform caption{
+  font-size:28px;
+  padding:5px;
+  margin:8px;
+ }
+ .rightsidemenuform .sel{
+  font-size:18px;
+  width:60%;
+  padding:3px;
+  border-radius:10px;
+  border:2px solid black;
+ }
+ .rightsidemenuform textarea{
+  font-size:15px;
+   width:80%;
+   height:60px;
+   border-radius:10px;
+   border:2px solid black;
+ }
+ .rightsidemenuform table{
+   width:100%;
+   border-spacing:12px;
+ }
+/*----------------- teacher student form css end-----------*/
+/*--------------------subject css-start---------------------------*/
+.rightsidemenusubject{
+border:2px solid black;
+padding:25px;
+border-radius:20px 0px 20px 0px;
+ box-shadow:1px 1px 3px 3px #1A7D97;
+}
+.rightsidemenusubject:hover{
+border:4px solid #337D92;
+    box-shadow:1px 1px 3px 3px black;
+}
+
+.rightsidemenusubject:hover h1{
+	 color:#0E4856;
+      text-shadow:2px 2px 3px grey;
+      border-bottom:2px solid black;
+      display:block;
+      width:65%;
+      margin:auto;
+      margin-bottom:15px;
+     box-shadow:2px 2px 3px grey;
+}
+.rightsidemenusubject h1{
+font-size:25px;
+text-align:center;
+font-family:'Open Sans',sans-serif;
+margin-bottom:15px;
+}
+.rightsidemenusubject label{
+font-size:20px;
+font-family:'Open Sans',sans-serif;
+}
+.rightsidemenusubject .sel{
+font-size:15px;
+padding:4px;
+border:1px solid black;
+margin:5px 0px 5px 5px;
+border-radius:10px;
+}
+.rightsidemenusubject .subj:hover{
+  background:#0F5668;
+}
+.rightsidemenusubject input{
+font-size:15px;
+border:1px solid black;
+margin:5px 0px 5px 5px;
+padding:5px;
+border-radius:10px;
+}
+.rightsidemenusubject .subj{
+font-size:18px;
+margin:10px 40% 5px 35%;
+padding:5px;
+background:#217183;
+border:2px solid black;
+font-family:'Open Sans',sans-serif;
+border-radius:10px;
+}
+/*---------------------subject css end---------------------------*/
+/*---------------------- branch css-start---------------------------*/
+.rightsidemenubranch{
+padding:18px;
+border:2px solid black;
+border-radius:20px 0px 20px 0px;
+ box-shadow:1px 1px 3px 3px #1A7D97;
+}
+.rightsidemenubranch:hover{
+	border:4px solid #337D92;
+    box-shadow:1px 1px 3px 3px black;
+}
+.rightsidemenubranch:hover h1{
+	color:#0E4856;
+      text-shadow:2px 2px 3px grey;	
+      border-bottom:2px solid black;
+      display:block;
+      width:65%;
+      margin:auto;
+      box-shadow:2px 2px 3px grey;
+      margin-bottom: 10px;
+}
+
+.rightsidemenubranch h1{
+margin-bottom:10px;
+font-size:22px;
+font-family:'Open Sans',sans-serif;
+text-align:center;
+}
+.rightsidemenubranch label{
+font-size:18px;
+margin-left:10px;
+font-family:'Open Sans',sans-serif;
+
+}
+.rightsidemenubranch input{
+font-size:15px;
+margin-left:5px;
+border:1px solid black;
+margin-bottom:10px;
+padding:5px;
+border-radius:10px;
+}
+.rightsidemenubranch .bran{
+font-sizs:15px;
+margin:5px 50% 5px 40%;
+padding:7px;
+font-family:'Open Sans',sans-serif;
+background:#0E4856;
+border:2px solid black;
+border-radius:5px;
+color:white;
+ }
+ .rightsidemenubranch .bran:hover{
+  background:#0F5668;
+ }
+ /*---------------------- branch css end---------------------------*/

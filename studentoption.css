@@ -1,0 +1,259 @@
+ *{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+/*-------------------header start----------------------*/
+header{
+width:100%;
+height:60px;
+background:#137A7C;
+box-shadow:2px 2px 2px #24585A;
+display:flex;
+justify-content: space-between;align-items: center;
+}
+header h3{
+  color:white;
+  font-family:'Open Sans',sans-serif;
+}
+header img{
+  height:40px;
+  margin-left:10px;
+}
+header .name{
+  margin-left: auto;
+color:white;
+font-size:20px;
+font-family:'Open Sans',sans-serif;
+}
+/*---------------header end-------------------*/
+
+.container {
+width:100%;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+/*----------------leftcontainer start---------------*/
+.leftcontainer{
+width:10%;
+height:calc(100vh - 60px);
+overflow:hidden;
+background:#1D5A5B;
+border-top:1px solid black;
+border-right:2px solid black;
+box-shadow:2px 2px 2px #24585A;
+}
+.leftcontainer ul{
+list-style:none;
+}
+.leftcontainer ul li{
+  border-bottom:1px solid white;
+  display:block;
+  text-align:center;
+  padding:20px;
+}
+.leftcontainer ul li a{
+  color:white;
+ text-decoration:none; 
+ font-size:18px;
+  font-family:'Open Sans',sans-serif;
+}
+.leftcontainer ul li:hover {
+  background:#107476;
+}
+.leftcontainer ul li:hover span{
+  color:black;
+}
+.leftcontainer ul li:hover i{
+  color:black;
+}
+
+.fas{
+   color:white;
+    font-size:30px;
+}
+.material-icons{
+   color:white;
+    font-size:40px;
+  
+}
+.fa{
+   color:white;
+    font-size:30px; 
+}
+.leftcontainer img{
+  width:40%;
+}
+.leftcontainer .logout{
+  color:white;
+   font-family:'Open Sans',sans-serif;
+}
+/*---------------------leftcontainer end----------------------*/
+.rightcontainer{
+width:90%;
+height:calc(100vh - 60px);
+display:flex;
+justify-content: center;
+align-items: center;
+}
+/*---------------------------profile start--------------*/
+.rightsideprofile{
+border:2px solid black;
+width:80%;
+padding-bottom:10px;
+border-radius:40px 0px 40px 0px;
+position:relative;
+box-shadow:1px 1px 3px 3px #268B95;
+}
+.rightsideprofile:hover{
+  border:4px solid #1B7E80;
+   box-shadow:1px 1px 3px 3px black;
+}
+.rightsideprofile img{
+  width:30%;
+  height:160px;
+  border-radius:50%;
+  position:relative;
+}
+.rightsideprofile span{
+  font-size:35px;
+  position:absolute;
+  top:15%;
+  left:35%;
+  width:60%;
+}
+.rightsideprofile table{
+width:100%;
+border-spacing: 20px 5px;
+}
+
+.rightsideprofile table,th,td{
+  
+  border-collapse: separate;
+  }
+
+  .rightsideprofile th{
+    text-align:left;
+    padding-left: 10px;
+    font-size:20px;
+    font-family:'Maven Pro',sans-serif;
+    border:none;
+    font-weight: lighter;
+  }
+  .rightsideprofile td{
+    padding:5px;
+    width:50%;
+    border-radius:5px;
+    background:#4DA5AD;
+    font-size:20px;
+     border:1px solid black;
+  }
+/*-------------------profile end--------------------*/
+/*-------------------feedback start-------------------*/
+.rightsidefeedback{
+  width:70%;
+  box-shadow:1px 1px 3px 3px #268B95;
+  border:2px solid black;
+  border-radius:20px 0px 20px 0px;
+  padding:25px;
+}
+.rightsidefeedback:hover{
+  border:4px solid #258E90;
+   box-shadow:1px 1px 3px 3px black;
+}
+hr{
+  width:75%;
+  transition-duration:1s;
+}
+.rightsidefeedback:hover hr{
+  width:95%;
+  border:1px solid black;
+}
+.rightsidefeedback:hover h1{
+  color:#4DC0C2;
+  text-shadow:2px 2px 3px black;
+}
+.rightsidefeedback h1,p{
+  font-family:'Open Sans',sans-serif;
+
+}
+.rightsidefeedback p{
+  padding-bottom:7px;
+}
+.rightsidefeedback h1::first-letter{
+ font-size:45px;
+}
+
+.rightsidefeedback label{
+  font-family:'Maven Pro',sans-serif;
+  font-weight:bold;
+      margin:25px 0px 10px 0px;
+  font-size:20px;
+  display:inline-block;
+  padding:4px;
+}
+.rightsidefeedback textarea{
+  font-size:15px;
+  width:70%;
+}
+.rightsidefeedback input[type=text],input[type=email]{
+  font-size:15px;
+  width:40%;
+  padding:5px;
+  margin-left:10px;
+}
+.rightsidefeedback input[type=submit]{
+  display:block;
+  margin:auto;
+  background:#25878A;
+  padding:8px;
+  border:1px solid black;
+  border-radius:5px;
+  font-size:20px;
+  color:white;
+}
+.rightsidefeedback input[type=submit]:hover{
+  border:2px solid black;
+  background:#4DC0C2;
+}
+/*-------------------feedback end--------------------*/
+/*-------------------attendance start-------------------*/
+.rightsideattendance {
+   width:80%;
+   height:500px;
+  }
+  .rightsideattendance h1{
+    width:98%;
+    border-radius:5px;
+    margin-left:auto;
+    padding:5px 0px 5px 10px;
+    background-image:linear-gradient(#37999B,#CED2D2);
+    border:2px solid black;
+    box-shadow:2px 2px 2px grey;
+    margin-bottom:25px;
+    font-family:'Open Sans',sans-serif;
+  }
+  .rightsideattendance table{
+  width:80%;
+  margin:0 auto;
+  }
+  .rightsideattendance th{
+    font-family:'Open Sans',sans-serif;
+  }
+  .rightsideattendance  table,th,td{
+    border:2px solid black;
+    border-collapse: collapse;
+  }
+  
+  .rightsideattendance th,td{
+    padding:7px;
+  }
+  .rightsideattendance .percentage{
+    font-family:'Roboto Mono',sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px 2px 2px grey;
+  }
+  /*-------------------attendance end--------------------*/
